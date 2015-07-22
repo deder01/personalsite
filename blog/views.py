@@ -2,10 +2,5 @@ from django.shortcuts import *
 from django.template.context import RequestContext
 
 # Create your views here.
-def hello(request):
-    name = "Bogo"
-    html = "<html><body>Hi %s from views.py. </body></html>" %name
-    return HttpResponse(html)
-
-def hello_template(request) :
-    return render_to_response('base.hamlpy', RequestContext(request, {}))
+def base(request) :
+    return render_to_response('blog/blog.hamlpy', RequestContext(request, {}))

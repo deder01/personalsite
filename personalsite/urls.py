@@ -19,8 +19,7 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^hello/', 'blog.views.hello'),
-    url(r'^hello_template/', 'blog.views.hello_template'),
+    url(r'^blog/', 'blog.views.base'),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root':settings.STATIC_ROOT}),
 ]
