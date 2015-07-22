@@ -1,0 +1,18 @@
+!!! 5
+{% load static %}
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title
+      -block title
+        Ma site
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
+    %link{:href => "{{ STATIC_URL }}css/bootstrap.min.css", :rel => 'stylesheet'}
+    %link{:href => "{{ STATIC_URL }}css/bootstrap-theme.min.css", :rel => 'stylesheet'}
+
+  %body
+    -block content
+      .welcome 
+        Hello people of the world!  We are here!

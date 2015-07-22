@@ -8,5 +8,4 @@ def hello(request):
     return HttpResponse(html)
 
 def hello_template(request) :
-    name="Bogo"
-    return render_to_response('hello.html', RequestContext(request, {'name':name}))
+    return render_to_response('base.hamlpy', RequestContext(request, {}))
