@@ -4,31 +4,32 @@
     %meta{:charset => "utf-8"}
     %title
       -block title
-        David Eder
+        David D. Eder
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"}
+    %script{:src => "{{ STATIC_URL }}js/bootstrap.min.js"}
     %link{:href => "{{ STATIC_URL }}css/bootstrap.min.css", :rel => 'stylesheet'}
     %link{:href => "{{ STATIC_URL }}css/blog.css", :rel => 'stylesheet'}
     %link{:href => "{{ STATIC_URL }}css/bootstrap-theme.min.css", :rel => 'stylesheet'}
-    %script{:src => "{{ STATIC_URL }}js/bootstrap.min.js"}
 
   %body
     .blog-masthead
       .container
         %nav.blog-nav
           %a.blog-nav-item.active{:href => "#"} Home
-          %a.blog-nav-item{:href => "#"} New features
-          %a.blog-nav-item{:href => "#"} Press
-          %a.blog-nav-item{:href => "#"} New hires
-          %a.blog-nav-item{:href => "#"} About
+          %a.blog-nav-item{:href => "/blog"} Blog 
+          %a.blog-nav-item{:href => "#"} About Me
+          %a.blog-nav-item{:href => "#"} Law School Process
+          %a.blog-nav-item{:href => "#"} Financial
     -block content
       Hello we up in here
     %footer.blog-footer
       %p
         Blog template built for
-        %a{:href => "http://getbootstrap.com"} Bootstrap
-        by
-          %a{:href => "https://twitter.com/mdo"} @mdo
+        %a{:href => "http://getbootstrap.com"} Bootstrap 
+        by 
+        %a{:href => "https://twitter.com/mdo"} @mdo
       %p
         %a{:href => "#"} Back to top

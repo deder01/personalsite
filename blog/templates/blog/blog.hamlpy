@@ -1,139 +1,137 @@
 {%extends "base.hamlpy" %}
-  -block title
-    Blog Posts
-  -block content
-    .container
-    .blog-header
-      %h1.blog-title The Bootstrap Blog
-      %p.lead.blog-description The official example template of creating a blog with Bootstrap.
-    .row
-      .col-sm-8.blog-main
-        .blog-post
-          %h2.blog-post-title Sample blog post
-          %p.blog-post-meta
-            January 1, 2014 by
-            %a{:href => "#"} Mark
-          %p This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.
-          %hr
-            %p
-              Cum sociis natoque penatibus et magnis
-                %a{:href => "#"} dis parturient montes
-              nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
-            %blockquote
+    -block content
+      .container
+        .blog-header
+          %h1.blog-title the bootstrap blog
+          %p.lead.blog-description the official example template of creating a blog with bootstrap.
+        .row
+          .col-sm-8.blog-main
+            .blog-post
+              %h2.blog-post-title sample blog post
+              %p.blog-post-meta
+                january 1, 2014 by
+                %a{:href => "#"} mark
+              %p this blog post shows a few different types of content that's supported and styled with bootstrap. basic typography, images, and code are all supported.
+              %hr
+                %p
+                  cum sociis natoque penatibus et magnis
+                    %a{:href => "#"} dis parturient montes
+                  nascetur ridiculus mus. aenean eu leo quam. pellentesque ornare sem lacinia quam venenatis vestibulum. sed posuere consectetur est at lobortis. cras mattis consectetur purus sit amet fermentum.
+                %blockquote
+                  %p
+                    curabitur blandit tempus porttitor.
+                    %strong nullam quis risus eget urna mollis
+                    ornare vel eu leo. nullam id dolor id nibh ultricies vehicula ut id elit.
+                %p
+                  etiam porta
+                  %em sem malesuada magna
+                  mollis euismod. cras mattis consectetur purus sit amet fermentum. aenean lacinia bibendum nulla sed consectetur.
+                %h2 heading
+                %p vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                %h3 sub-heading
+                %p cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                %pre
+                  %code example code block
+                %p aenean lacinia bibendum nulla sed consectetur. etiam porta sem malesuada magna mollis euismod. fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+                %h3 sub-heading
+                %p cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. aenean lacinia bibendum nulla sed consectetur. etiam porta sem malesuada magna mollis euismod. fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                %ul
+                  %li praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                  %li donec id elit non mi porta gravida at eget metus.
+                  %li nulla vitae elit libero, a pharetra augue.
+                %p donec ullamcorper nulla non metus auctor fringilla. nulla vitae elit libero, a pharetra augue.
+                %ol
+                  %li vestibulum id ligula porta felis euismod semper.
+                  %li cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                  %li maecenas sed diam eget risus varius blandit sit amet non magna.
+                %p cras mattis consectetur purus sit amet fermentum. sed posuere consectetur est at lobortis.
+            / /.blog-post
+            .blog-post
+              %h2.blog-post-title another blog post
+              %p.blog-post-meta
+                december 23, 2013 by
+                %a{:href => "#"} jacob
               %p
-                Curabitur blandit tempus porttitor.
-                %strong Nullam quis risus eget urna mollis
-                ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            %p
-              Etiam porta
-              %em sem malesuada magna
-              mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-            %h2 Heading
-            %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-            %h3 Sub-heading
-            %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            %pre
-              %code Example code block
-            %p Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-            %h3 Sub-heading
-            %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-            %ul
-              %li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-              %li Donec id elit non mi porta gravida at eget metus.
-              %li Nulla vitae elit libero, a pharetra augue.
-            %p Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-            %ol
-              %li Vestibulum id ligula porta felis euismod semper.
-              %li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              %li Maecenas sed diam eget risus varius blandit sit amet non magna.
-            %p Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-        / /.blog-post
-        .blog-post
-          %h2.blog-post-title Another blog post
-          %p.blog-post-meta
-            December 23, 2013 by
-            %a{:href => "#"} Jacob
-          %p
-            Cum sociis natoque penatibus et magnis
-              %a{:href => "#"} dis parturient montes
-            nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
-          %blockquote
-            %p
-              Curabitur blandit tempus porttitor.
-              %strong Nullam quis risus eget urna mollis
-              ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-          %p
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-          %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        / /.blog-post
-        .blog-post
-          %h2.blog-post-title New feature
-          %p.blog-post-meta
-            December 14, 2013 by
-            %a{:href => "#"} Chris
-          %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          %ul
-            %li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            %li Donec id elit non mi porta gravida at eget metus.
-            %li Nulla vitae elit libero, a pharetra augue.
-          %p
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-          %p Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-        / /.blog-post
-        %nav
-          %ul.pager
-            %li
-              %a{:href => "#"} Previous
-            %li
-              %a{:href => "#"} Next
-      / /.blog-main
-      .col-sm-3.col-sm-offset-1.blog-sidebar
-        .sidebar-module.sidebar-module-inset
-          %h4 About
-          %p
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-        .sidebar-module
-          %h4 Archives
-          %ol.list-unstyled
-            %li
-              %a{:href => "#"} March 2014
-            %li
-              %a{:href => "#"} February 2014
-            %li
-              %a{:href => "#"} January 2014
-            %li
-              %a{:href => "#"} December 2013
-            %li
-              %a{:href => "#"} November 2013
-            %li
-              %a{:href => "#"} October 2013
-            %li
-              %a{:href => "#"} September 2013
-            %li
-              %a{:href => "#"} August 2013
-            %li
-              %a{:href => "#"} July 2013
-            %li
-              %a{:href => "#"} June 2013
-            %li
-              %a{:href => "#"} May 2013
-            %li
-              %a{:href => "#"} April 2013
-        .sidebar-module
-          %h4 Elsewhere
-          %ol.list-unstyled
-            %li
-              %a{:href => "#"} GitHub
-            %li
-              %a{:href => "#"} Twitter
-            %li
-              %a{:href => "#"} Facebook
-      / /.blog-sidebar
-    / /.row
-  / /.container
+                cum sociis natoque penatibus et magnis
+                  %a{:href => "#"} dis parturient montes
+                nascetur ridiculus mus. aenean eu leo quam. pellentesque ornare sem lacinia quam venenatis vestibulum. sed posuere consectetur est at lobortis. cras mattis consectetur purus sit amet fermentum.
+              %blockquote
+                %p
+                  curabitur blandit tempus porttitor.
+                  %strong nullam quis risus eget urna mollis
+                  ornare vel eu leo. nullam id dolor id nibh ultricies vehicula ut id elit.
+              %p
+                etiam porta
+                %em sem malesuada magna
+                mollis euismod. cras mattis consectetur purus sit amet fermentum. aenean lacinia bibendum nulla sed consectetur.
+              %p vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            / /.blog-post
+            .blog-post
+              %h2.blog-post-title new feature
+              %p.blog-post-meta
+                december 14, 2013 by
+                %a{:href => "#"} chris
+              %p cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. aenean lacinia bibendum nulla sed consectetur. etiam porta sem malesuada magna mollis euismod. fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              %ul
+                %li praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                %li donec id elit non mi porta gravida at eget metus.
+                %li nulla vitae elit libero, a pharetra augue.
+              %p
+                etiam porta
+                %em sem malesuada magna
+                mollis euismod. cras mattis consectetur purus sit amet fermentum. aenean lacinia bibendum nulla sed consectetur.
+              %p donec ullamcorper nulla non metus auctor fringilla. nulla vitae elit libero, a pharetra augue.
+            / /.blog-post
+            %nav
+              %ul.pager
+                %li
+                  %a{:href => "#"} previous
+                %li
+                  %a{:href => "#"} next
+          / /.blog-main
+          .col-sm-3.col-sm-offset-1.blog-sidebar
+            .sidebar-module.sidebar-module-inset
+              %h4 about
+              %p
+                etiam porta
+                %em sem malesuada magna
+                mollis euismod. cras mattis consectetur purus sit amet fermentum. aenean lacinia bibendum nulla sed consectetur.
+            .sidebar-module
+              %h4 archives
+              %ol.list-unstyled
+                %li
+                  %a{:href => "#"} march 2014
+                %li
+                  %a{:href => "#"} february 2014
+                %li
+                  %a{:href => "#"} january 2014
+                %li
+                  %a{:href => "#"} december 2013
+                %li
+                  %a{:href => "#"} november 2013
+                %li
+                  %a{:href => "#"} october 2013
+                %li
+                  %a{:href => "#"} september 2013
+                %li
+                  %a{:href => "#"} august 2013
+                %li
+                  %a{:href => "#"} july 2013
+                %li
+                  %a{:href => "#"} june 2013
+                %li
+                  %a{:href => "#"} may 2013
+                %li
+                  %a{:href => "#"} april 2013
+            .sidebar-module
+              %h4 elsewhere
+              %ol.list-unstyled
+                %li
+                  %a{:href => "#"} github
+                %li
+                  %a{:href => "#"} twitter
+                %li
+                  %a{:href => "#"} facebook
+          / /.blog-sidebar
+        / /.row
+      / /.container

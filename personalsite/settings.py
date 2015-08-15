@@ -78,6 +78,7 @@ MIDDLEWARE_CLASSES = (
 TEMPLATE_DIRS = (
         os.path.join(PROJECT_ROOT_PATH, "templates"),
         os.path.join(PROJECT_ROOT_PATH, "blog/templates"),
+        os.path.join(PROJECT_ROOT_PATH, "personalsite/templates"),
 )
 
 TEMPLATE_LOADERS = (
