@@ -15,21 +15,29 @@
     %link{:href => "{{ STATIC_URL }}css/bootstrap-theme.min.css", :rel => 'stylesheet'}
 
   %body
-    .blog-masthead
-      .container
-        %nav.blog-nav
-          %a.blog-nav-item.active{:href => "#"} Home
-          %a.blog-nav-item{:href => "/blog"} Blog 
-          %a.blog-nav-item{:href => "#"} About Me
-          %a.blog-nav-item{:href => "#"} Law School Process
-          %a.blog-nav-item{:href => "#"} Financial
-    -block content
-      Hello we up in here
+    .container
+      %nav.navbar.navbar-inverse{:role => "navigation"}
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#navbarCollapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:href => "/"} David
+          %ul.nav.navbar-nav
+            -if activetab == 'home'
+              %li.active
+                %a{:href => "/"} Home
+            -else
+              %li
+                %a{:href => "/"} Home
+            -if activetab == 'blog'
+              %li.active
+                %a{:href => "/blog"} Blog
+            -else
+              %li
+                %a{:href => "/blog"} Blog
+      -block content
     %footer.blog-footer
-      %p
-        Blog template built for
-        %a{:href => "http://getbootstrap.com"} Bootstrap 
-        by 
-        %a{:href => "https://twitter.com/mdo"} @mdo
       %p
         %a{:href => "#"} Back to top
