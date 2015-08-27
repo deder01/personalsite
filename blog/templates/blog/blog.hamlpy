@@ -46,42 +46,6 @@
                   %li maecenas sed diam eget risus varius blandit sit amet non magna.
                 %p cras mattis consectetur purus sit amet fermentum. sed posuere consectetur est at lobortis.
             / /.blog-post
-            .blog-post
-              %h2.blog-post-title another blog post
-              %p.blog-post-meta
-                december 23, 2013 by
-                %a{:href => "#"} jacob
-              %p
-                cum sociis natoque penatibus et magnis
-                  %a{:href => "#"} dis parturient montes
-                nascetur ridiculus mus. aenean eu leo quam. pellentesque ornare sem lacinia quam venenatis vestibulum. sed posuere consectetur est at lobortis. cras mattis consectetur purus sit amet fermentum.
-              %blockquote
-                %p
-                  curabitur blandit tempus porttitor.
-                  %strong nullam quis risus eget urna mollis
-                  ornare vel eu leo. nullam id dolor id nibh ultricies vehicula ut id elit.
-              %p
-                etiam porta
-                %em sem malesuada magna
-                mollis euismod. cras mattis consectetur purus sit amet fermentum. aenean lacinia bibendum nulla sed consectetur.
-              %p vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-            / /.blog-post
-            .blog-post
-              %h2.blog-post-title new feature
-              %p.blog-post-meta
-                december 14, 2013 by
-                %a{:href => "#"} chris
-              %p cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. aenean lacinia bibendum nulla sed consectetur. etiam porta sem malesuada magna mollis euismod. fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-              %ul
-                %li praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                %li donec id elit non mi porta gravida at eget metus.
-                %li nulla vitae elit libero, a pharetra augue.
-              %p
-                etiam porta
-                %em sem malesuada magna
-                mollis euismod. cras mattis consectetur purus sit amet fermentum. aenean lacinia bibendum nulla sed consectetur.
-              %p donec ullamcorper nulla non metus auctor fringilla. nulla vitae elit libero, a pharetra augue.
-            / /.blog-post
             %nav
               %ul.pager
                 %li
@@ -93,9 +57,11 @@
             .sidebar-module.sidebar-module-inset
               %h4 about
               %p
-                etiam porta
-                %em sem malesuada magna
-                mollis euismod. cras mattis consectetur purus sit amet fermentum. aenean lacinia bibendum nulla sed consectetur.
+                My name is David Eder and I am software developer aspiring to be a lawyer
+                I am currently studying for the LSAT in an attempt to make up for an undergrad experience
+                that involved too much partying.  When I'm not doing that you can find me salsaing at almost any event in Boston.
+                I've recently picked up salsa and have become addicted to it!  If I can't find a salsa event then I am probably reading some philosphy,
+                another hobby I have very recenlty picked up.
             .sidebar-module
               %h4 archives
               %ol.list-unstyled
@@ -123,15 +89,6 @@
                   %a{:href => "#"} may 2013
                 %li
                   %a{:href => "#"} april 2013
-            .sidebar-module
-              %h4 elsewhere
-              %ol.list-unstyled
-                %li
-                  %a{:href => "#"} github
-                %li
-                  %a{:href => "#"} twitter
-                %li
-                  %a{:href => "#"} facebook
           / /.blog-sidebar
         / /.row
       / /.container

@@ -37,6 +37,11 @@
             -else
               %li
                 %a{:href => "/blog"} Blog
+        %form.navbar-form.navbar-right{:role => "login"}
+          .form-group
+            %input.form-control{:id => "username", :placeholder => "Username ", :type => "text"}
+            %input.form-control{:id => "password", :placeholder => "Pasword", :type => "password"}
+            %input.form-control{:type => "submit"}
       -block content
     %footer.blog-footer
       %p
