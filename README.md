@@ -4,4 +4,4 @@ Also going to refresh my django on the way hopefully.
 
 
 # But what is on here
-That is yet TBD.  Gotta get things up and running with django/heroku, then we'll focus on content ;)
+That is yet TBD.  Gotta get things up and running with django/heroku, then we'll focus on content ;)  Probably something from Thailand you would think...
