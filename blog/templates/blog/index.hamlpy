@@ -1,5 +1,0 @@
-{%extends "base.hamlpy" %}
-    -block content
-      .container
-        Hello World!  This is my site.  It includes a blog where I write about my law school application process.
-        I also enjoy writing about philosphy that I read, and anything else that comes to mind.
